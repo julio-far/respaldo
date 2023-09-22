@@ -3,6 +3,7 @@ package com.example.loginapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -30,8 +31,14 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val registerButton: Button =findViewById(R.id.button_register)
+        registerButton.setOnClickListener{
+            performSignUp()
+        }
+
+
+
         // lets get email and password from the user
-        performSignUp()
 
     }
 private  fun performSignUp(){
@@ -54,6 +61,8 @@ private  fun performSignUp(){
 
                 val intent = Intent(this,MainActivity::class.java)
                 startActivity(intent)
+                Toast.makeText(baseContext, "Success.",
+                    Toast.LENGTH_SHORT,).show()
 
 
             } else {
