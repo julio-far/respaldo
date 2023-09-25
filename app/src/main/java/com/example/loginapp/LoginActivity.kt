@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         // Initialize Firebase Auth
-        auth = Firebase.auth
+       auth = Firebase.auth
 
         val registertext: TextView = findViewById(R.id.textView_register_now)
 
@@ -27,6 +27,8 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
+
+
         //let go login now
         //first we add a login button
         val loginButton: Button = findViewById(R.id.button_login)
@@ -47,9 +49,12 @@ class LoginActivity : AppCompatActivity() {
             return
 
         }
+
+
+
         val emailInput = email.text.toString()
         val passwordInput = password.text.toString()
-        auth.createUserWithEmailAndPassword(emailInput , passwordInput)
+        auth.signInWithEmailAndPassword(emailInput , passwordInput)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, navigate to the MainAxticvity

@@ -31,12 +31,12 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val registerButton: Button =findViewById(R.id.button_register)
+
+        //boton de registro
+        val registerButton: Button = findViewById(R.id.button_register)
         registerButton.setOnClickListener{
             performSignUp()
         }
-
-
 
         // lets get email and password from the user
 
