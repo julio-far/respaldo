@@ -7,12 +7,65 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="16dp"
+        android:text="Aprende Conmigo"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <Button
+        android:id="@+id/button_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="169dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665"
+        app:srcCompat="@drawable/cute_cartoon_joystick_free_vector" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="148dp"
+        android:layout_height="142dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/books_illustration_cartoon_books_books_vector" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Juega"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton6"
+        app:layout_constraintStart_toStartOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

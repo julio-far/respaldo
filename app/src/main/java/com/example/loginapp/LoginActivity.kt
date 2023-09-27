@@ -57,7 +57,7 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(emailInput , passwordInput)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    // Sign in success, navigate to the MainAxticvity
+                    // nos envia al menu rincipal  MainAxticvity
                     val intent = Intent(this,MainActivity::class.java)
                     startActivity(intent)
                     Toast.makeText(baseContext, "Success.",
@@ -70,8 +70,6 @@ class LoginActivity : AppCompatActivity() {
                         "Authentication failed.",
                         Toast.LENGTH_SHORT,
                     ).show()
-
-
                 }
             }
             .addOnFailureListener{
