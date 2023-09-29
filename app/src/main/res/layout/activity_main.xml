@@ -15,9 +15,9 @@
         android:textAllCaps="false"
         android:textSize="34sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
-        app:layout_constraintStart_toStartOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+        app:layout_constraintEnd_toEndOf="@+id/ButtonDic"
+        app:layout_constraintStart_toStartOf="@+id/ButtonDic"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonDic" />
 
     <Button
         android:id="@+id/button_salir"
@@ -44,7 +44,7 @@
         app:srcCompat="@drawable/cute_cartoon_joystick_free_vector" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/ButtonDic"
         android:layout_width="148dp"
         android:layout_height="142dp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton6"
@@ -54,6 +54,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.533"
         app:srcCompat="@drawable/books_illustration_cartoon_books_books_vector" />
+
 
     <TextView
         android:id="@+id/textView2"
