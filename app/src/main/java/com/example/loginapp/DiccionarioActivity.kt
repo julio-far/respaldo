@@ -15,5 +15,13 @@ class DiccionarioActivity : AppCompatActivity() {
           val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
+
+        //con este boton nos dirigira al apartado de abecedario
+        val abcd= findViewById<ImageButton>(R.id.imageButton2)
+        abcd.setOnClickListener{
+            //crea una intencion para ingresar a la abecedario
+            val intent = Intent(this,Abecedario::class.java)
+            startActivity(intent)
     }
+        }
 }
