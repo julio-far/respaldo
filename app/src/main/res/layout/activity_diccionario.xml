@@ -7,6 +7,18 @@
     tools:context=".DiccionarioActivity">
 
     <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VideoTutoriales"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton16"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/imageButton16"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton16" />
+
+    <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,24 +33,25 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="168dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="170dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="124dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cartoon_abc_letters_free_vector" />
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="123dp"
-        android:layout_height="117dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="121dp"
+        android:layout_height="102dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184"
         app:srcCompat="@drawable/numeros"
         tools:ignore="MissingConstraints" />
 
@@ -59,8 +72,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="32dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="32dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="140dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/videos_qqw" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
